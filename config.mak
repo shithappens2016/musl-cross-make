@@ -7,6 +7,7 @@
 # There is no default TARGET; you must select one here or on the make
 # command line. Some examples:
 
+TARGET = i686-linux-musl
 # TARGET = i486-linux-musl
 # TARGET = x86_64-linux-musl
 # TARGET = arm-linux-musleabi
@@ -34,7 +35,7 @@
 
 # BINUTILS_VER = 2.25.1
 # GCC_VER = 5.2.0
-# MUSL_VER = git-master
+MUSL_VER = 1.1.24
 # GMP_VER =
 # MPC_VER =
 # MPFR_VER =
@@ -78,7 +79,7 @@
 # following and add other languages if you want to try getting them to
 # work too.
 
-# GCC_CONFIG += --enable-languages=c,c++
+GCC_CONFIG += --enable-languages=c,c++
 
 # You can keep the local build path out of your toolchain binaries and
 # target libraries with the following, but then gdb needs to be told
